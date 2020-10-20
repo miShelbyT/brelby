@@ -1,0 +1,6 @@
+<h1> Wine Selection: </h1>
+<ul>
+    <% @wines.each do |wine| %>
+        <li> <p "style:text=purple"> <%= link_to wine.name, wine_path(wine) %></p></li>
+    <% end %>
+</ul>
