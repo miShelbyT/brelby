@@ -30,14 +30,6 @@ ActiveRecord::Schema.define(version: 2020_10_20_013758) do
     t.index ["bakery_id"], name: "index_cupcakes_on_bakery_id"
   end
 
-  create_table "customers", force: :cascade do |t|
-    t.string "name"
-    t.integer "age"
-    t.string "email"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
   create_table "orders", force: :cascade do |t|
     t.integer "customer_id", null: false
     t.integer "wine_id", null: false
@@ -50,6 +42,14 @@ ActiveRecord::Schema.define(version: 2020_10_20_013758) do
     t.index ["cupcake_id"], name: "index_orders_on_cupcake_id"
     t.index ["customer_id"], name: "index_orders_on_customer_id"
     t.index ["wine_id"], name: "index_orders_on_wine_id"
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "name"
+    t.integer "age"
+    t.string "email"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "wine_shops", force: :cascade do |t|
