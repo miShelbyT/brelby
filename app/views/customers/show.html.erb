@@ -8,4 +8,10 @@ Name: <%= @customer.name %><br>
 
 Age: <%= @customer.age %><br>
 
-Email: <%= @customer.email %>
+Email: <%= @customer.email %><br><br>
+
+<ul> 
+<% @customer.orders.each do |order| %>
+		<li> Order # <%= link_to order[:id], order_path(order) %> </li><br>
+<% end %>
+</ul>
