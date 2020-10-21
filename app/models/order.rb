@@ -1,10 +1,10 @@
 class Order < ApplicationRecord
 
-  belongs_to :user
+  belongs_to :customer
   belongs_to :wine
   belongs_to :cupcake
 
-  validates :user_id, presence: true
+  validates :customer_id, presence: true
   validates :wine_id, presence: true
   validates :cupcake_id, presence: true
   validates :date, presence: true

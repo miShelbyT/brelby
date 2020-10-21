@@ -1,5 +1,5 @@
 class WineShopsController < ApplicationController
-    def show 
-        @wine_shop = WineShop.find(params[:id])
+    def index 
+        @wine_shops = WineShop.all
     end
 end

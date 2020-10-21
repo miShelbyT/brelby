@@ -37,7 +37,7 @@ class OrdersController < ApplicationController
         end
     end
 
-    def destroy 
+		def destroy 
 		@order.destroy
 		redirect_to orders_path
     end

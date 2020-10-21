@@ -1,5 +1,5 @@
 class BakeriesController < ApplicationController
-    def show 
-        @bakery = Bakery.find(params[:id])
+    def index 
+        @bakeries = Bakery.all
     end
 end

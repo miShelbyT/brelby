@@ -1,0 +1,7 @@
+<% @bakeries.each do |bakery| %>
+    <h1><%= bakery.name %></h1>
+
+    <p><%= bakery.address %></p>
+<% end %>
+
+<%= button_to "Cupcakes! 🧁", cupcakes_path, method: "get" %>

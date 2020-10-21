@@ -1,0 +1,7 @@
+<% @wine_shops.each do |wine_shop| %>
+    <h1><%= wine_shop.name %></h1>
+
+    <p><%= wine_shop.address %></p>
+<% end %>
+
+<%= button_to "Wine Selection! 🍷", wines_path, method: "get" %>

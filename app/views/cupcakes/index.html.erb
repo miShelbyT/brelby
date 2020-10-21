@@ -1,7 +1,7 @@
 <h1> Cupcakes: </h1>
 <ul>
     <% @cupcakes.each do |cupcake| %>
-        <li> <p style:"text=purple"> <%= link_to cupcake.name, cupcake_path(cupcake) %></p></li>
+        <li> <%= link_to cupcake.name, cupcake_path(cupcake) %> </li>
     <% end %>
 </ul>
 
