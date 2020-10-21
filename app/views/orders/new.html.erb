@@ -1,3 +1,21 @@
-<h1> Place Order: </h1>
+<h1> Order Form </h1>
 
-<%= render 'form' %>
+<% if flash[:errors] %>
+	<% flash[:errors].each do |error| %>
+		<p style="color:red;"><%= error %></p>
+	<% end %>
+<% end %>
+
+
+<%= form_for @order do |f| %>
+	<%= f.label :user_id %>
+	<%= f.collection_select :user_id, User.all, :id, :name %>
+
+	<%= f.label :wine_id %>
+	<%= f.collection_select :wine_id, Wine.all, :id, :name %>
+
+	<%= f.label :cupcake_id %>
+	<%= f.collection_select :cupcake_id, Cupcake.all, :id, :name %>
+
+	<%= f.submit "Sign Up!🍷 " %>
+<% end %>

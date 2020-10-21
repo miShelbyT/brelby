@@ -1,18 +1,15 @@
 <h1> Order Confirmation </h1>
 
 <ul>
-    <li> <%= @order.customer.name %> </li>
+    <li> <%= @order.user_id.name %> </li>
 
-    <li> <%= @order.wine.name %> </li>
+    <li> <%= @order.wine_id.name %> </li>
 
-    <li> <%= @order.cupcake.name %> </li>
+    <li> <%= @order.cupcake_id.name %> </li>
 
-    <li> <%= @order.date.strftime("%B %d, %Y") %> </li>
+    <li> <%= @order.date %> </li>
 
-    <li> <%= @order.time.strftime("%l:%M %p") %> </li>
+    <li> <%= @order.time %> </li>
 
-    <li> $<%= @order.tip.round(0) %> </li>
+    <li> <%= @order.tip %> </li>
 </ul>
-
-
-<%= button_to "Cancel Order 😫 ", @order, method: :delete %>
