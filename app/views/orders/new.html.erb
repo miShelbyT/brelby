@@ -8,8 +8,8 @@
 
 
 <%= form_for @order do |f| %>
-	<%= f.label :user_id %>
-	<%= f.collection_select :user_id, User.all, :id, :name %>
+	<%= f.label :customer_id %>
+	<%= f.collection_select :customer_id, Customer.all, :id, :name %>
 
 	<%= f.label :wine_id %>
 	<%= f.collection_select :wine_id, Wine.all, :id, :name %>
