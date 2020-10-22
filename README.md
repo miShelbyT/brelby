@@ -21,4 +21,5 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+## Big Thanks To:
+Gabriele Garanzelli, Tania Melnyczuk, Bundo Kim, Brett Jordan, 
