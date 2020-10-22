@@ -39,3 +39,4 @@ Wine.create(wine_shop_id:WineShop.all.sample.id, name: "Campo Viejo",	grape: "Ri
 Wine.create(wine_shop_id:WineShop.all.sample.id, name: "Villa Lucia", grape: "Sangiovese",	origin: "Italy", price: rand(25..100), pairing: "cupcake", img_url: "https://unsplash.com/photos/uwfzwM3DgOQ")
 Wine.create(wine_shop_id:WineShop.all.sample.id, name: "Los Monteros", grape: "Cava", origin: "Spain", price: rand(25..100), pairing: "cupcake", img_url: "https://unsplash.com/photos/s0MCETmH9HU")
 
+# "this is a test"
