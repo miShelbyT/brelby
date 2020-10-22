@@ -23,4 +23,7 @@ Things you may want to cover:
 
 ## Big Thanks To The Following For Their UnSplash Images:
 Gabriele Garanzelli, Tania Melnyczuk, Bundo Kim, Brett Jordan, Claire Edwards, Blake Barlow,
-Eduardo Froza, John Fornander
+Eduardo Froza, John Fornander, Meritt Thomas, Mia Cambriello, Kate Hliznitsova, M. W, Heather Mount, 
+Joseph Gonzalez, Ibrahim Boran, Zahra Tavakoli Fard, Jennie Brown, Jon Tyson, OhTilly, 
+
+THANK YOU CSS QUEEN -- STACEY CARILLO!!!!!

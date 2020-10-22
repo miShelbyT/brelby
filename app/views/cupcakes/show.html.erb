@@ -1,5 +1,21 @@
-<h1>Cupcake:</h1>
-<p> <%= @cupcake.img_url %> </p>
-<h3> <%= @cupcake.name %> </h3><br>
+<div class= "wine_show">
+<div id="heading" class="heading">
+<h1>Cupcake: <%= @cupcake.name %></h1>
+</div>
 
-🧁 <em><%= @cupcake.description %></em> 🧁 
+
+<div class="product_image">  <%= link_to image_tag @cupcake.img_url  %> </div>
+
+<div class="desc">
+
+    <p>Name: <%= @cupcake.name %></p>
+
+    <p>Description: <%= @cupcake.description %></p>
+
+    <p>Price: $<%= @cupcake.price %></p>
+
+    <p>Recommended With: <%= @cupcake.pairing %></p>
+
+</div>
+
+</div>

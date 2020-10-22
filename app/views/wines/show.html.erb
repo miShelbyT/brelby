@@ -1,14 +1,21 @@
-
+<div class= "wine_show">
+<div id="heading" class="heading">
 <h1>Wine: <%= @wine.name %></h1>
+</div>
 
-<p>  <%= link_to image_tag @wine.img_url  %> </p>
 
-<ul>
-    <li>Type: <%= @wine.grape %></li>
+<div class="product_image">  <%= link_to image_tag @wine.img_url  %> </div>
 
-    <li>From: <%= @wine.origin %></li>
+<div class="desc">
 
-    <li>Price: $<%= @wine.price %></li>
+    <p>Type: <%= @wine.grape %></p>
 
-    <li>Recommended With: <%= @wine.pairing %></li>
-</ul>
+    <p>From: <%= @wine.origin %></p>
+
+    <p>Price: $<%= @wine.price %></p>
+
+    <p>Recommended With: <%= @wine.pairing %></p>
+
+</div>
+
+</div>

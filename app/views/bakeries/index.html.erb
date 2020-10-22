@@ -1,7 +1,18 @@
+<div id='heading'>
 <% @bakeries.each do |bakery| %>
     <h1><%= bakery.name %></h1>
 
     <p><%= bakery.address %></p>
 <% end %>
 
-<%= button_to "Cupcakes! 🧁", cupcakes_path, method: "get" %>
+<p>Located in Park Slope, Ladybird Bakery has been providing goodies for 23 years</p>
+<p>Since 1992, Ladybird Bakery (formerly known as Two Little Red Hens) has been delighting Brooklyn's Park Slope neighborhood with delicious, American-style baked treats. Owner Mary Louise Clemens brings a warm, Southern sensibility to her classic recipes.</p>
+<p>Over the years, Ladybird has grown famous for its decadent Brooklyn Blackout, addictive Red Velvet, and its range of holiday pies and tarts. Early-risers have been indulging in our fresh-baked muffins and scones.</p>
+
+
+<%= button_to "Click Here to View Our Cupcakes! 🧁", cupcakes_path, method: "get" %>
+ 
+ <img src="app/assets/images/Ladybird.png">
+
+</div>
+

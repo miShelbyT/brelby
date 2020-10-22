@@ -1,7 +1,12 @@
+<div id='heading'>
 <% @wine_shops.each do |wine_shop| %>
     <h1><%= wine_shop.name %></h1>
 
     <p><%= wine_shop.address %></p>
 <% end %>
 
-<%= button_to "Wine Selection! 🍷", wines_path, method: "get" %>
+<p>A local favorite wine shop, The Juice Box has a wide selection of wine and spirits and boasts a friendly/knowledgable staff! </p>
+
+<img src="app/assets/images/juice box.png">
+<%= button_to "Click Here To Browse Our Wine Selection! 🍷", wines_path, method: "get" %>
+</div>
