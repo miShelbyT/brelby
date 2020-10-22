@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   resources :wines
 	resources :orders
 	resources :customers
+
+	post '/orders/:id', to: 'orders#edit'
 	
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

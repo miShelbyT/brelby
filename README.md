@@ -26,4 +26,5 @@ Gabriele Garanzelli, Tania Melnyczuk, Bundo Kim, Brett Jordan, Claire Edwards, B
 Eduardo Froza, John Fornander, Meritt Thomas, Mia Cambriello, Kate Hliznitsova, M. W, Heather Mount, 
 Joseph Gonzalez, Ibrahim Boran, Zahra Tavakoli Fard, Jennie Brown, Jon Tyson, OhTilly, 
 
-THANK YOU CSS QUEEN -- STACEY CARILLO!!!!!
+THANK YOU CSS QUEEN -- STACEY CARILLO!!!!! 
+We would also like to thank: Mike Smith, Greg Wright, Arthur Wilton, Chase Rabenn and Greg Dwyer 
