@@ -1,7 +1,8 @@
 <h1> Cupcakes: </h1>
 <ul>
     <% @cupcakes.each do |cupcake| %>
-        <li> <%= link_to cupcake.name, cupcake_path(cupcake) %> </li>
+        <li> <%= link_to cupcake.img_url, cupcake_path(cupcake) %> </li>
+        <li> <%= cupcake.name %></li>
     <% end %>
 </ul>
 

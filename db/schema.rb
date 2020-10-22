@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_20_013758) do
+ActiveRecord::Schema.define(version: 2020_10_22_003808) do
 
   create_table "bakeries", force: :cascade do |t|
     t.string "name"
@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 2020_10_20_013758) do
     t.string "pairing"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "img_url"
     t.index ["bakery_id"], name: "index_cupcakes_on_bakery_id"
   end
 
@@ -68,6 +69,7 @@ ActiveRecord::Schema.define(version: 2020_10_20_013758) do
     t.string "pairing"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "img_url"
     t.index ["wine_shop_id"], name: "index_wines_on_wine_shop_id"
   end
 

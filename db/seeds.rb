@@ -23,8 +23,43 @@ Bakery.create(name:"Two Little Red Hens", address:"1112 8th Ave, Brooklyn, NY 11
   Cupcake.create(bakery_id:Bakery.all.sample.id, name:Faker::Dessert.flavor, description:"cupcake", price:rand(5..20), pairing:"wine")
 end
 
+# country_list = [
+#   [ "Germany", 81831000 ],
+#   [ "France", 65447374 ],
+#   [ "Belgium", 10839905 ],
+#   [ "Netherlands", 16680000 ]
+# ]
+
+# country_list.each do |name, population|
+#   Country.create( name: name, population: population )
+# end
+
+# wine_list = [
+#   ["Moda", grape, origin, price, pairing] 
+#   ["Niel Joubert"]
+#   ["Roche Mazet"]
+#   ["Grand Barossa"]
+#   ["La Fleur Baron"]
+#   ["Marlborough"]
+#   ["Cantina Di Negrar"] 
+#   ["Ata Rangi"] 
+#   ["Dreaming Tree"] 
+#   ["Jacob’s Creek"] 
+#   ["Bicicleta"] 
+#   ["Kooliburra"] 
+#   ["Camp Viejo"] 
+#   ["Villa Lucia"] 
+#   ["Los Monteros"] 
+
+# ]
+
 15.times do
   Wine.create(wine_shop_id:WineShop.all.sample.id, name:"wine", grape:"grape", origin:"country", price:rand(25..100), pairing:"cupcake")
 end
+
+# Wine.create(wine_shop_id:WineShop.all.sample.id, name: "Moda", grape:"Montepulciano", origin:"Italy", price:81, pairing:"cupcake", img_url:"https://unsplash.com/photos/yqAk8NyqN3Y")
+# Wine.create(wine_shop_id:WineShop.all.sample.id, name: "Niel Joubert", grape:"Shiraz", origin:"South Africa", price:100, pairing:"cupcake", img_url:"https://unsplash.com/photos/CEUfg4Q8cFM")
+  
+
 
 
