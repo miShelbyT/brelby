@@ -2,5 +2,6 @@
 <ul>
     <% @wines.each do |wine| %>
         <p><li> <%= link_to wine.name, wine_path(wine) %> </li></p>
+				<p>  <%= link_to image_tag wine.img_url  %> </p>
     <% end %>
 </ul>
