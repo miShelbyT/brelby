@@ -1,12 +1,14 @@
 
 <h1>Wine: <%= @wine.name %></h1>
-<p> <%= @wine.img_url %> </p>
+
+<p>  <%= link_to image_tag @wine.img_url  %> </p>
+
 <ul>
-    <li><%= @wine.grape %></li>
+    <li>Type: <%= @wine.grape %></li>
 
-    <li><%= @wine.origin %></li>
+    <li>From: <%= @wine.origin %></li>
 
-    <li><%= @wine.price %></li>
+    <li>Price: $<%= @wine.price %></li>
 
-    <li><%= @wine.pairing %></li>
+    <li>Recommended With: <%= @wine.pairing %></li>
 </ul>
