@@ -1,7 +1,12 @@
 <h1> Wine Selection: </h1>
-<ul>
+
+<div id='content'>
     <% @wines.each do |wine| %>
-        <p><li> <%= link_to wine.name, wine_path(wine) %> </li></p>
-				<p>  <%= link_to image_tag wine.img_url  %> </p>
+        <div class="tile">
+            <h2> <%= link_to wine.name, wine_path(wine) %> </h2>
+            <%= link_to image_tag wine.img_url  %>
+        </div>
     <% end %>
-</ul>
+</div>
+
+
