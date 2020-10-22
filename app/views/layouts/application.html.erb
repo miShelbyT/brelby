@@ -10,6 +10,26 @@
   </head>
 
   <body>
+    <div class="parent">
+
+      <div id="banner">
+          <h1> Welcome to Brelby's!</h1>
+          <h3> Where Wine & Cupcakes Come Together </h3>
+      </div>
+
+      <div class="nav">
+          <ul>
+              <li> <%= link_to "WINES", wines_path %> </li>
+              <li> <%= link_to "CUPCAKES", cupcakes_path %> </li>
+              <li> <%= link_to "SIGN-UP", new_customer_path %> </li>
+              <li> <%= link_to "ACCOUNT", new_customer_path %> </li>
+              <li> <%= link_to "PLACE ORDER", new_customer_path %> </li>
+              <li> <%= link_to "BAKERY", bakeries_path %> </li>
+              <li> <%= link_to "WINE SHOP", wine_shops_path %> </li>
+          </ul>
+      </div>
+    </div>
+
     <%= yield %>
   </body>
 </html>
