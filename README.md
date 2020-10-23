@@ -22,7 +22,7 @@ User will see an error message if they introduce the incorrect information in th
 ## Big Thanks To The Following For Their UnSplash Images:
 Gabriele Garanzelli, Tania Melnyczuk, Bundo Kim, Brett Jordan, Claire Edwards, Blake Barlow,
 Eduardo Froza, John Fornander, Meritt Thomas, Mia Cambriello, Kate Hliznitsova, M. W, Heather Mount, 
-Joseph Gonzalez, Ibrahim Boran, Zahra Tavakoli Fard, Jennie Brown, Jon Tyson, OhTilly, 
+Joseph Gonzalez, Ibrahim Boran, Zahra Tavakoli Fard, Jennie Brown, Jon Tyson, OhTilly
 
 ## Big thanks to the following Flatiron folks:
 THANK YOU CSS QUEEN -- STACEY CARILLO!!!!! 
