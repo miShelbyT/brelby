@@ -12,9 +12,9 @@
 
         <p> Delivery Date: <%= @order.date.strftime("%B %d, %Y") %> &nbsp    &nbsp    //&nbsp    &nbsp    Delivery Time: <%= @order.time.strftime("%l:%M %p") %></p>
 
-        <p>Tip Amount: $<%= @order.tip.round(0) %> &nbsp    &nbsp    //&nbsp    &nbsp    Total Amount Due: </p>
+        <p>Tip Amount: $<%= @order.tip.round(0) %> &nbsp    &nbsp    //&nbsp    &nbsp    Total Amount Due: $<%= @order.total_amount_due.round(0) %></p>
 
-				<p style="text:blue">Please Make Your Payment Via Venmo: @brelbys </p>
+				<p>Please Make Your Payment Via Venmo: @brelbys </p>
 
     <%= button_to "Cancel Order 😫 ", @order, method: :delete %><br>
 

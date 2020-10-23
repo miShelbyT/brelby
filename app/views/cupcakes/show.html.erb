@@ -14,7 +14,9 @@
 
     <p>Price: $<%= @cupcake.price %></p>
 
-    <p>Recommended With: <%= @cupcake.pairing %></p>
+    <p>Recommended With: <%= @cupcake.pairing %> </p>
+
+		<%= button_to "I Want This!", new_order_path, method: :get %>
 
 </div>
 

@@ -14,8 +14,12 @@
 
     <p>Price: $<%= @wine.price %></p>
 
-    <p>Recommended With: <%= @wine.pairing %></p>
+    <p>Recommended With: <%= @wine.pairing %> Cupcake</p>
+
+		<%= button_to "I Want This!", new_order_path, method: :get %>
 
 </div>
+
+
 
 </div>

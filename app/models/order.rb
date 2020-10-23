@@ -16,6 +16,10 @@ class Order < ApplicationRecord
     if date.present? && date < Date.today
       errors.add(:date, "can't be in the past")
     end
-  end
+	end
+	
+  def total_amount_due
+    self.cupcake.price + self.wine.price + self.tip
+	end
 
 end
