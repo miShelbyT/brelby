@@ -28,6 +28,13 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 
+.central_image {
+    border: 10px solid#ddd;
+    border-radius: 4px;
+    max-width: 100%;
+    height: auto;
+}
+
 .wine_show{
 	display: grid;
 	grid-template-areas: "heading"
@@ -43,18 +50,23 @@ html{
 .heading{
 	grid-area: heading;
 }
+
+/* We need to double back to this. We want to make a class for index wine and cupcake images separate from main images */
+
 .product_image{
 	grid-area: img;
 	display: block;
-	margin: auto;
+    margin: auto;
+    /* border: 10px solid#ddd;
+    border-radius: 4px;
+    width: auto;
+    height: 300px; */
 }
+
 .desc{
 	grid-area: desc;
 	text-align: center;
-	
 }
-
-
 
 /* * {
     border: 1px solid black;
@@ -120,18 +132,21 @@ html{
     .image { 
         grid-area: 4 / 1 / 6 / 6;
 		}
-		
+        
+        
+ /* We want to make this a separate class for the main index images */    
+
 img {
     border: 10px solid#ddd;
     border-radius: 4px;
     width: auto;
     height: 300px;
 }
+
 #heading {
 	margin: 0px 0px;
-  padding: 20px 10px 5px 10px;
-  
-  text-align: center;
+    padding: 20px 10px 5px 10px;
+    text-align: center;
 }
 
 #products {

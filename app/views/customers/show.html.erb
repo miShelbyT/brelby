@@ -1,17 +1,21 @@
-<% if flash[:success] %>
-<h2 style="color:green;"><%= flash[:success] %></h2>
-<% end %>
+<div id='heading'>
 
-<h3>Customer Profile:</h3>
+	<% if flash[:success] %>
+	<h2 style="color:green;"><%= flash[:success] %></h2>
+	<% end %>
 
-Name: <%= @customer.name %><br>
+	<h3>Customer Profile:</h3>
 
-Age: <%= @customer.age %><br>
+	<p> Name: <%= @customer.name %></p>
 
-Email: <%= @customer.email %><br><br>
+	<p> Age: <%= @customer.age %></p>
 
-<ul> 
-<% @customer.orders.each do |order| %>
-		<li> Order # <%= link_to order[:id], order_path(order) %> </li><br>
-<% end %>
-</ul>
+	<p> Email: <%= @customer.email %></p>
+
+	<% @customer.orders.each do |order| %>
+		<p> Order Invoice # <%= link_to order[:id], order_path(order) %> </p>
+	<% end %>
+	<br>
+	<%= button_to "Place Order", new_order_path, method: :get %>
+
+</div>

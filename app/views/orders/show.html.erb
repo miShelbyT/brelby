@@ -1,20 +1,25 @@
-<h1> Order Confirmation </h1>
+<div id='heading'>
 
-<ul>
-    <li> <%= @order.customer.name %> </li>
+    <h1> Order Confirmation </h1>
 
-    <li> <%= @order.wine.name %> </li>
+        <p> Customer Name: <%= @order.customer.name %> </p>
 
-    <li> <%= @order.cupcake.name %> </li>
+        <p> Wine: <%= @order.wine.name %> </p>
 
-    <li> <%= @order.date.strftime("%B %d, %Y") %> </li>
+        <p> Cupcake: <%= @order.cupcake.name %> </p>
 
-    <li> <%= @order.time.strftime("%l:%M %p") %> </li>
+        <p> Delivery Date: <%= @order.date.strftime("%B %d, %Y") %> </p>
 
-    <li> $<%= @order.tip.round(0) %> </li>
-</ul>
+        <p> Delivery Time: <%= @order.time.strftime("%l:%M %p") %> </p>
 
+        <p> $<%= @order.tip.round(0) %> </p>
 
-<%= button_to "Cancel Order 😫 ", @order, method: :delete %>
+        <p> Total Amount Paid: </p>
 
-<%= button_to "Update Order", edit_order_path(@order), method: :get %>
+    <%= button_to "Cancel Order 😫 ", @order, method: :delete %><br>
+
+    <%= button_to "Update Order", edit_order_path(@order), method: :get %><br>
+
+    <%= button_to "Customer Profile", customer_path(@order.customer), method: :get %>
+
+</div>
