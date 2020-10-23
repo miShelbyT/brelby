@@ -1,6 +1,6 @@
 # README
 
-*Brelby's Wine and Cupcake Delivery Service
+*Brelby's Wine and Cupcake Delivery Service*
 
 User Stories:
 
