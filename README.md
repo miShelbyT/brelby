@@ -1,9 +1,19 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Brelby's Wine and Cupcake Delivery Service
 
-Things you may want to cover:
+User Stories:
+create an account (possibly w/ password),
+log into their account,
+view a list of available products,
+view recent order(s)
+create an order(s),
+view their order(s),
+change their order(s),
+cancel their order(s),
+schedule a delivery (time/date),
+see an error message if they introduce the incorrect information in the order form
+
 
 * Ruby version
 
@@ -27,4 +37,5 @@ Eduardo Froza, John Fornander, Meritt Thomas, Mia Cambriello, Kate Hliznitsova, 
 Joseph Gonzalez, Ibrahim Boran, Zahra Tavakoli Fard, Jennie Brown, Jon Tyson, OhTilly, 
 
 THANK YOU CSS QUEEN -- STACEY CARILLO!!!!! 
+
 We would also like to thank: Mike Smith, Greg Wright, Arthur Wilton, Chase Rabenn and Greg Dwyer 
