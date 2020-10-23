@@ -1,20 +1,20 @@
 <div id='heading'>
 
+		<% if flash[:success] %>
+			<h2 style="color:green;"><%= flash[:success] %></h2>
+		<% end %>
+
     <h1> Order Confirmation </h1>
 
         <p> Customer Name: <%= @order.customer.name %> </p>
 
-        <p> Wine: <%= @order.wine.name %> </p>
+        <p> Wine: <%= @order.wine.name %> &nbsp    &nbsp    //&nbsp    &nbsp    Cupcake: <%= @order.cupcake.name %> </p>
 
-        <p> Cupcake: <%= @order.cupcake.name %> </p>
+        <p> Delivery Date: <%= @order.date.strftime("%B %d, %Y") %> &nbsp    &nbsp    //&nbsp    &nbsp    Delivery Time: <%= @order.time.strftime("%l:%M %p") %></p>
 
-        <p> Delivery Date: <%= @order.date.strftime("%B %d, %Y") %> </p>
+        <p>Tip Amount: $<%= @order.tip.round(0) %> &nbsp    &nbsp    //&nbsp    &nbsp    Total Amount Due: </p>
 
-        <p> Delivery Time: <%= @order.time.strftime("%l:%M %p") %> </p>
-
-        <p> $<%= @order.tip.round(0) %> </p>
-
-        <p> Total Amount Paid: </p>
+				<p style="text:blue">Please Make Your Payment Via Venmo: @brelbys </p>
 
     <%= button_to "Cancel Order 😫 ", @order, method: :delete %><br>
 

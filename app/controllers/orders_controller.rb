@@ -17,7 +17,7 @@ class OrdersController < ApplicationController
         @order = Order.create(order_params)
 		if @order.valid?
 			flash[:success] = "Thank you for your business! An order confirmation will be sent to your email."
-		redirect_to order_path(@order)
+			redirect_to order_path(@order)
 		else
 			flash[:errors] = @order.errors.full_messages
 			redirect_to new_order_path			
