@@ -10,6 +10,7 @@ Cupcake.destroy_all
 Wine.destroy_all
 Bakery.destroy_all
 WineShop.destroy_all
+Order.destroy_all
 
 15.times do
   Customer.create(name:Faker::TvShows::TwinPeaks.character, age:rand(15..75), email:Faker::Internet.email)
@@ -36,7 +37,7 @@ Cupcake.create(bakery_id:Bakery.all.sample.id, name: "Lemon",	description: "This
 Cupcake.create(bakery_id:Bakery.all.sample.id, name: "Pistachio",	description: "Simply perfect vanilla cupcake with teeny pistachio crumbs makes afor a deliciously sweet and nutty flavor, topped with strawberry frosting.", price: rand(25..100), pairing: "Roche Mazet", img_url: "cupcakes/pistachio.png")
 Cupcake.create(bakery_id:Bakery.all.sample.id, name: "Red Velvet", description: "This traditional red velvet cupcake is cholatey delicous topped with cream cheese frosting.", price: rand(25..100), pairing: "Niel Joubert", img_url: "cupcakes/velvet.jpg")
 Cupcake.create(bakery_id:Bakery.all.sample.id, name: "Green Tea",	description: "Light and fluffy matcha/green tea cupcake with cream cheese frosting.", price: rand(25..100), pairing: "Los Monteros", img_url: "cupcakes/matcha.png")
-Cupcake.create(bakery_id:Bakery.all.sample.id, name: "Mint Chocolate", description: "Decadent chocolate cupcake, topped with thick and creamy mint chocolate chip frosting.",	price: rand(25..100), pairing: "Dreaming Tree", img_url: "Mint Chocolate.jpg")
+Cupcake.create(bakery_id:Bakery.all.sample.id, name: "Mint Chocolate", description: "Decadent chocolate cupcake, topped with thick and creamy mint chocolate chip frosting.",	price: rand(25..100), pairing: "Dreaming Tree", img_url: "cupcakes/Mint Chocolate.jpg")
 Cupcake.create(bakery_id:Bakery.all.sample.id, name: "Butter Pecan", description: "This cupcake is not only full of toasted butter pecans, it also has a touch of cinammon for a nod towards the transition to fall.", price: rand(25..100), pairing: "Grand Barossa", img_url: "cupcakes/butter pecan.png")
 
 
