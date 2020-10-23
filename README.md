@@ -28,4 +28,5 @@ Joseph Gonzalez, Ibrahim Boran, Zahra Tavakoli Fard, Jennie Brown, Jon Tyson, Oh
 THANK YOU CSS QUEEN -- STACEY CARILLO!!!!! 
 We would also like to thank Chase Rabenn, Andrew Santos and Greg Dwyer, Mike Smith, Greg Wright, Arthur Wilton. Plus thanks to Sam for the idea of emojis on buttons. 🏆
 
-##### Let us not forget our significant others who feed us & take care of our families while we code non-stop. Big big BIG thanks to Chris and Katherine. And Ari, Zig and TR.
+#### Let us not forget our significant others who feed us & take care of our families while we code non-stop. 
+Big big BIG thanks to Chris and Katherine. And Ari, Zig and TR.
