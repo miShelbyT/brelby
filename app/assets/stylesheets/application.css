@@ -35,6 +35,14 @@ body {
     height: auto;
 }
 
+h1 {
+	text-align: center;
+}
+
+form {
+	text-align: center;
+}
+
 .wine_show{
 	display: grid;
 	grid-template-areas: "heading"
@@ -47,8 +55,10 @@ html{
 	background-color: rgb(243, 245, 225);
 }
 
-.heading{
-	grid-area: heading;
+#pic {
+	display: block;
+	text-align: center;
+	padding: 50px;
 }
 
 /* We need to double back to this. We want to make a class for index wine and cupcake images separate from main images */
@@ -151,8 +161,8 @@ img {
 }
 
 #heading {
-	margin: 0px 0px;
-    padding: 20px 10px 5px 10px;
+		margin: 10px 10px;
+    padding: 70px 10px 5px 10px;
     text-align: center;
 }
 
