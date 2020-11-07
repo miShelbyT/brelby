@@ -1,9 +1,9 @@
 
-<div id='heading'>
+<div class='heading'>
 <h1> Cupcake Selection: </h1>
 </div>
 
-<div id='products'>
+<div class='container'>
     <% @cupcakes.each do |cupcake| %>
         <div class="tile">
 							<h2> <%= link_to cupcake.name, cupcake_path(cupcake) %> </h2>

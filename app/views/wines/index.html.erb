@@ -1,8 +1,8 @@
-<div id='heading'>
+<div class='heading'>
 <h1> Wine Selection: </h1>
 </div>
 
-<div id='products'>
+<div class='container'>
     <% @wines.each do |wine| %>
         <div class="tile">
             <h2> <%= link_to wine.name, wine_path(wine) %> </h2>
